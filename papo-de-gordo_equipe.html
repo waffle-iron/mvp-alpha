@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel='stylesheet' type="text/css" href="css/bootstrap.css">
+        <link rel='stylesheet' type="text/css" href="css/rotating-card.css">
+        <link rel='stylesheet' type="text/css" href="css/podlistas.css">
+        <link rel='stylesheet' type="text/css" href="css/barra.css">
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+        <!--
+        <base href="http://www.podlistas.com.br/">
+        <base target="_blank" href="http://www.podlistas.com.br/">
+        -->
+        <base target="_blank">
+        <title>PodListas</title>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand navbar-brand-logo" href="http://podlistas.com.br">
+                            <div class="logo"><img src="images/podlistas_logo_small.png" alt=""></div>
+                            <div class="brand">PodListas</div>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">PodListas<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Podcasts</a></li>
+                                    <li><a href="#">Podcasters</a></li>
+                                    <li><a href="#">Ouvintes</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Como se cadastrar</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">Sobre o PodListas</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="navbar-form navbar-right" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Pesquisar podcasts">
+                            </div>
+                            <button type="submit" class="btn btn-default">Pesquisar</button>
+                        </form>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+            <div class="row">
+                <div class="col-md-10 col-sm-10 col-sm-offest-1">
+                    <!-- Dudu Sales -->
+                    <div class="col-sm-4 col-md-4">
+                        <div class="card-container manual-flip">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="images/papodegordo_capa.png" alt="">
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="images/papodegordo_profile_dudu-sales.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Eduardo Sales Filho</h3>
+                                            <p class="profession"><i class="fa fa-microphone"></i>&nbsp;Podcaster</p>
+                                            <p>Eduardo Sales Filho é publicitário, professor, podcaster, blogueiro, tradutor, chef amador e gordo.</p>
+                                            <!-- <h5><i class="fa fa-map-marker fa-fw text-muted"></i> São Paulo, SP</h5> -->
+                                            <!-- <h5><i class="fa fa-building-o fa-fw text-muted"></i> Virtual Net Marketing Digital </h5> -->
+                                            <!-- <h5><i class="fa fa-calendar-o fa-fw text-muted"></i> 08 de Abril de 1976</h5> -->
+                                        </div>
+                                        <div class="footer">
+                                            <span>Papo de Gordo | Metacast</span>
+                                            <button class="btn-simple botao-flip" onclick="rotateCard(this)"><i class="fa fa-info-circle"></i> </button>
+                                        </div>
+                                    </div>
+                                </div><!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <div class="name">Dudu Sales</div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4>Podcasts</h4>
+                                            <ul class="lista-podcasts">
+                                                <li class="podcast"><a href="http://www.papodegordo.com.br/"><i class="fa fa-globe fa-fw"></i>&nbsp;Papo de Gordo</a></li>
+                                                <li class="podcast"><a href="http://metacast.info/"><i class="fa fa-globe fa-fw"></i>&nbsp;Metacast</a></li>
+                                                <li class="podcast"><a href="http://virtualnet.com.br/#!/podcast"><i class="fa fa-globe fa-fw"></i>&nbsp;VirtualNet Podcast</a></li>
+                                            </ul>
+                                            <h4 class="episodios">Últimos episódios</h4>
+                                            <small class="legenda">Legenda:&nbsp;<i class="fa fa-microphone"></i>&nbsp;Integrante&nbsp;&#124;&nbsp;<i class="fa fa-headphones"></i>&nbsp;Convidado</small>
+                                            <ul class="lista-episodios">
+                                                <li><small class="pubdate">30/10/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/10/30/podcast-papo-de-gordo-160-essa-tal-de-fama/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo 160 - Essa tal de fama...</a></li>
+                                                <li><small class="pubdate">21/10/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/10/21/podcast-papo-de-gordo-extra-04-dia-do-podcast-2015/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo Extra 04 - Dia do Podcast 2015</a></li>
+                                                <li><small class="pubdate">15/10/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/10/15/podcast-papo-de-gordo-cafe-26/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo Café 26</a></li>
+                                            </ul>
+                                            <small class="outros-podcasts"><a href="#">Outros podcasts</a></small>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn-simple botao-flip" onclick="rotateCard(this)"><i class="fa fa-reply"></i> </button>
+                                            <div class="social-links text-center">
+                                                <a class="facebook" href="http://www.facebook.com/eduardosales"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a class="google" href="https://plus.google.com/u/0/112552092142216483691/"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a class="twitter" href="https://twitter.com/eduardo_sales"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end back panel -->
+                            </div><!-- end card -->
+                        </div><!-- end card-container -->
+                    </div>
+                    <!-- Maira Moraes -->
+                    <div class="col-sm-4 col-md-4">
+                        <div class="card-container manual-flip">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="images/papodegordo_capa.png" alt="">
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="images/papodegordo_profile_maira-moraes_02.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Maira Moraes</h3>
+                                            <p class="profession"><i class="fa fa-microphone"></i>&nbsp;Podcaster</p>
+                                            <p>Jornalista apaixonada por novas tecnologias, mergulhou de cabeça nessa tal de internet. Como já nasceu sentindo fome, comer sempre foi seu esporte preferido.</p>
+                                        </div>
+                                        <div class="footer">
+                                            <span>Papo de Gordo</span>
+                                            <button class="btn-simple botao-flip" onclick="rotateCard(this)"><i class="fa fa-info-circle"></i> </button>
+                                        </div>
+                                    </div>
+                                </div><!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <div class="name">Maira Moraes</div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4>Podcasts</h4>
+                                            <ul class="lista-podcasts">
+                                                <li class="podcast"><a href="http://www.papodegordo.com.br/">&nbsp;Papo de Gordo</a></li>
+                                            </ul>
+                                            <h4 class="episodios">Últimos episódios</h4>
+                                            <small class="legenda">Legenda:&nbsp;<i class="fa fa-microphone"></i>&nbsp;Integrante&nbsp;&#124;&nbsp;<i class="fa fa-headphones"></i>&nbsp;Convidado</small>
+                                            <ul class="lista-episodios">
+                                                <li><small class="pubdate">15/10/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/10/15/podcast-papo-de-gordo-cafe-26/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo Café 26</a></li>
+                                                <li><small class="pubdate">30/09/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/09/30/podcast-papo-de-gordo-159-o-machismo-nosso-de-cada-dia/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo 159 - O Machismo Nosso de Cada Dia</a></li>
+                                                <li><small class="pubdate">15/09/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/09/15/podcast-papo-de-gordo-158-independencia-ou-morte/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo 158 - Independência ou Morte!</a></li>
+                                            </ul>
+                                            <small class="outros-podcasts"><a href="#">Outros podcasts</a></small>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn-simple botao-flip" onclick="rotateCard(this)"><i class="fa fa-reply"></i> </button>
+                                            <div class="social-links text-center">
+                                                <a class="facebook" href="http://www.facebook.com/mairamoraespdg"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a class="google" href="https://plus.google.com/u/0/115735325397495722524/"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a class="twitter" href="https://twitter.com/maira_moraes"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end back panel -->
+                            </div><!-- end card -->
+                        </div><!-- end card-container -->
+                    </div>
+                    <!-- Lucio Luiz -->
+                    <div class="col-sm-4 col-md-4">
+                        <div class="card-container manual-flip">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="images/papodegordo_capa.png" alt="">
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="images/papodegordo_profile_lucio-luiz.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Lucio Luiz</h3>
+                                            <p class="profession"><i class="fa fa-microphone"></i>&nbsp;Podcaster</p>
+                                            <p>Jornalista e educador. Começou a participar do podcast Papo de Gordo por puro acaso. Ou por que não tiveram melhores opções, sei lá...</p>
+                                        </div>
+                                        <div class="footer">
+                                            <span>Papo de Gordo</span>
+                                            <button class="btn-simple botao-flip" onclick="rotateCard(this)"><i class="fa fa-info-circle"></i> </button>
+                                        </div>
+                                    </div>
+                                </div><!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <div class="name">Lucio Luiz</div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4>Podcasts</h4>
+                                            <ul class="lista-podcasts">
+                                                <li class="podcast"><a href="http://www.papodegordo.com.br/">&nbsp;Papo de Gordo</a></li>
+                                            </ul>
+                                            <h4 class="episodios">Últimos episódios</h4>
+
+                                            <small class="legenda">Legenda:&nbsp;<i class="fa fa-microphone"></i>&nbsp;Integrante&nbsp;&#124;&nbsp;<i class="fa fa-headphones"></i>&nbsp;Convidado</small>
+                                            <ul class="lista-episodios">
+                                                <li><small class="pubdate">21/10/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/10/21/podcast-papo-de-gordo-extra-04-dia-do-podcast-2015/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo Extra 04 - Dia do Podcast 2015</a></li>
+                                                <li><small class="pubdate">15/10/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/10/15/podcast-papo-de-gordo-cafe-26/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo Café 26</a></li>
+                                                <li><small class="pubdate">30/09/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/09/30/podcast-papo-de-gordo-159-o-machismo-nosso-de-cada-dia/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo 159 - O Machismo Nosso de Cada Dia</a></li>
+                                            </ul>
+                                            <small class="outros-podcasts"><a href="#">Outros podcasts</a></small>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn-simple botao-flip" onclick="rotateCard(this)"><i class="fa fa-reply"></i> </button>
+                                            <div class="social-links text-center">
+                                                <a class="facebook" href="http://www.facebook.com/lucioluiz"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a class="google" href="https://plus.google.com/u/0/118441895027019519188/"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a class="twitter" href="https://twitter.com/lucioluiz"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end back panel -->
+                            </div><!-- end card -->
+                        </div><!-- end card-container -->
+                    </div>
+                    <!-- Flavio Soares -->
+                    <div class="col-sm-4 col-md-4">
+                        <div class="card-container manual-flip">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="images/papodegordo_capa.png" alt="">
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="images/papodegordo_profile_flavio-soares.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Flávio Soares</h3>
+                                            <p class="profession"><i class="fa fa-microphone"></i>&nbsp;Podcaster</p>
+                                            <p>Editor de arte profissional, desenhista desleixado, escritor preguiçoso e cozinheiro amador. Entrou no Papo de Gordo por um acidente (o gordo que participaria da primeira gravação ficou sem conexão no dia marcado).</p>
+                                        </div>
+                                        <div class="footer">
+                                            <span>Papo de Gordo</span>
+                                            <button class="btn-simple botao-flip" onclick="rotateCard(this)"><i class="fa fa-info-circle"></i> </button>
+                                        </div>
+                                    </div>
+                                </div><!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <div class="name">Flávio Soares</div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4>Podcasts</h4>
+                                            <ul class="lista-podcasts">
+                                                <li class="podcast"><a href="http://www.papodegordo.com.br/">&nbsp;Papo de Gordo</a></li>
+                                            </ul>
+                                            <h4 class="episodios">Últimos episódios</h4>
+                                            <small class="legenda">Legenda:&nbsp;<i class="fa fa-microphone"></i>&nbsp;Integrante&nbsp;&#124;&nbsp;<i class="fa fa-headphones"></i>&nbsp;Convidado</small>
+                                            <ul class="lista-episodios">
+                                                <li><small class="pubdate">30/10/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/10/30/podcast-papo-de-gordo-160-essa-tal-de-fama/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo 160 - Essa tal de fama...</a></li>
+                                                <li><small class="pubdate">15/10/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/10/15/podcast-papo-de-gordo-cafe-26/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo Café 26</a></li>
+                                                <li><small class="pubdate">15/09/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/09/15/podcast-papo-de-gordo-158-independencia-ou-morte/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo 158 - Independência ou Morte!</a></li>
+                                            </ul>
+                                            <small class="outros-podcasts"><a href="#">Outros podcasts</a></small>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn-simple botao-flip" onclick="rotateCard(this)"><i class="fa fa-reply"></i> </button>
+                                            <div class="social-links text-center">
+                                                <a class="facebook" href="http://www.facebook.com/flavio.soarez"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a class="google" href="https://plus.google.com/u/0/102474147468612572999/"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a class="twitter" href="https://twitter.com/FlavioFSoares"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end back panel -->
+                            </div><!-- end card -->
+                        </div><!-- end card-container -->
+                    </div>
+                    <!-- Dr. Tapioca -->
+                    <div class="col-sm-4 col-md-4">
+                        <div class="card-container manual-flip">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="images/papodegordo_capa.png" alt="">
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="images/papodegordo_profile_vinicius-tapioca.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Dr. Tapioca</h3>
+                                            <p class="profession"><i class="fa fa-microphone"></i>&nbsp;Podcaster</p>
+                                            <p>Vinícius Tapioca é médico e piadista de salão, tenta sempre ser engraçado, mas nem sempre conveniente.</p>
+                                        </div>
+                                        <div class="footer">
+                                            <span>Papo de Gordo</span>
+                                            <button class="btn-simple botao-flip" onclick="rotateCard(this)"><i class="fa fa-info-circle"></i> </button>
+                                        </div>
+                                    </div>
+                                </div><!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <div class="name">Dr. Tapioca</div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4>Podcasts</h4>
+                                            <ul class="lista-podcasts">
+                                                <li class="podcast"><a href="http://www.papodegordo.com.br/">&nbsp;Papo de Gordo</a></li>
+                                            </ul>
+                                            <h4 class="episodios">Últimos episódios</h4>
+                                            <small class="legenda">Legenda:&nbsp;<i class="fa fa-microphone"></i>&nbsp;Integrante&nbsp;&#124;&nbsp;<i class="fa fa-headphones"></i>&nbsp;Convidado</small>
+                                            <ul class="lista-episodios">
+                                                <li><small class="pubdate">30/10/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/10/30/podcast-papo-de-gordo-160-essa-tal-de-fama/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo 160 - Essa tal de fama...</a></li>
+                                                <li><small class="pubdate">30/09/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/09/30/podcast-papo-de-gordo-159-o-machismo-nosso-de-cada-dia/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo 159 - O Machismo Nosso de Cada Dia</a></li>
+                                                <li><small class="pubdate">15/09/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/09/15/podcast-papo-de-gordo-158-independencia-ou-morte/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo 158 - Independência ou Morte!</a></li>
+                                            </ul>
+                                            <small class="outros-podcasts"><a href="#">Outros podcasts</a></small>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn-simple botao-flip" onclick="rotateCard(this)"><i class="fa fa-reply"></i> </button>
+                                            <div class="social-links text-center">
+                                                <a class="facebook" href="http://www.facebook.com/vinicius.tapioca"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a class="google" href="https://plus.google.com/u/0/113309957268967481579/"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a class="twitter" href="https://twitter.com/DrTapioca"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end back panel -->
+                            </div><!-- end card -->
+                        </div><!-- end card-container -->
+                    </div>
+                    <!-- Eubalena -->
+                    <div class="col-sm-4 col-md-4">
+                        <div class="card-container manual-flip">
+                            <div class="card">
+                                <div class="front">
+                                    <div class="cover">
+                                        <img src="images/papodegordo_capa.png" alt="">
+                                    </div>
+                                    <div class="user">
+                                        <img class="img-circle" src="images/papodegordo_profile_eubalena.jpg" alt="">
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h3 class="name">Chelly Ramos</h3>
+                                            <p class="profession"><i class="fa fa-microphone"></i>&nbsp;Podcaster</p>
+                                            <p>É marisqueira de Santa Catarina, bairrista, bacharel em Letras, estudante de Marketing, mãe, esposa, dona de casa e apreciadora de tudo que estiver ligado a comida.</p>
+                                        </div>
+                                        <div class="footer">
+                                            <span>Papo de Gordo</span>
+                                            <button class="btn-simple botao-flip" onclick="rotateCard(this)"><i class="fa fa-info-circle"></i> </button>
+                                        </div>
+                                    </div>
+                                </div><!-- end front panel -->
+                                <div class="back">
+                                    <div class="header">
+                                        <div class="name">Eubalena</div>
+                                    </div>
+                                    <div class="content">
+                                        <div class="main">
+                                            <h4>Podcasts</h4>
+                                            <ul class="lista-podcasts">
+                                                <li class="podcast"><a href="http://www.papodegordo.com.br/">&nbsp;Papo de Gordo</a></li>
+                                            </ul>
+                                            <h4 class="episodios">Últimos episódios</h4>
+                                            <small class="legenda">Legenda:&nbsp;<i class="fa fa-microphone"></i>&nbsp;Integrante&nbsp;&#124;&nbsp;<i class="fa fa-headphones"></i>&nbsp;Convidado</small>
+                                            <ul class="lista-episodios">
+                                                <li><small class="pubdate">15/10/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/10/15/podcast-papo-de-gordo-cafe-26/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo Café 26</a></li>
+                                                <li><small class="pubdate">30/09/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/09/30/podcast-papo-de-gordo-159-o-machismo-nosso-de-cada-dia/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo 159 - O Machismo Nosso de Cada Dia</a></li>
+                                                <li><small class="pubdate">30/08/2015</small></li>
+                                                <li><a class="episodio" href="http://www.papodegordo.com.br/2015/08/30/podcast-papo-de-gordo-157-pequenos-prazeres-da-vida/"><i class="fa fa-microphone"></i>&nbsp;Papo de Gordo 157 - Pequenos Prazeres da Vida</a></li>
+                                            </ul>
+                                            <small class="outros-podcasts"><a href="#">Outros podcasts</a></small>
+                                        </div>
+                                        <div class="footer">
+                                            <button class="btn-simple botao-flip" onclick="rotateCard(this)"><i class="fa fa-reply"></i> </button>
+                                            <div class="social-links text-center">
+                                                <a class="facebook disabled"><i class="fa fa-facebook fa-fw"></i></a>
+                                                <a class="google disabled"><i class="fa fa-google-plus fa-fw"></i></a>
+                                                <a class="twitter" href="https://twitter.com/Realeuba"><i class="fa fa-twitter fa-fw"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><!-- end back panel -->
+                            </div><!-- end card -->
+                        </div><!-- end card-container -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-1.10.2.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/flip.js" type="text/javascript"></script>
+    </body>
+</html>

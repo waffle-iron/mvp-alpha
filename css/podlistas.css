@@ -1,0 +1,143 @@
+.lista-podcasts {
+  list-style-type: none;
+  text-align: justify;
+  padding-left: 0;
+}
+
+.episodios {
+  padding-top: 10px;
+}
+
+.episodio {
+  font-size: 0.9em;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+.legenda {
+  padding: 0;
+  text-align: center;
+  color: #999999;
+  font-size: 0.8em;
+}
+
+.lista-episodios {
+  margin-top: 10px;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: justify;
+}
+
+.outros-podcasts {
+  clear: both;
+  text-align: center;
+}
+
+/*
+.legenda {
+  bottom: 40px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+*/
+
+.botao-flip {
+  clear: both;
+  float: right;
+  display: inline-block;
+  /*padding: 0;*/
+  /*margin-bottom: 0;*/
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: bottom;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+       -o-user-select: none;
+          user-select: none;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: #999999;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.podcast {
+  font-size: 0.9em;
+}
+
+.card .episode-cover{
+    /*height: 105px;*/
+    overflow: hidden;
+    border-radius: 4px 4px 0 0;
+}
+
+.card .episode-cover img{
+    width: 100%;
+}
+
+.episodio-descricao{
+  font-size: 0.76em;
+}
+
+.card .front .episode-name {
+    font-size: 1.3em;
+    line-height: 0.85em;
+    margin: 0;
+    text-align: center;
+}
+.card .back .episode-name {
+    line-height: 1em;
+    margin: 5px 0 5px 0;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-size: 0.85em;
+}
+
+.participantes {
+  padding-top: 5px;
+  font-size: 1.2em;
+  color: #999999;
+}
+
+.participante {
+  font-size: 0.85em;
+}
+
+.lista-participantes {
+  margin-top: 2px;
+  padding-left: 0;
+  list-style-type: none;
+  text-align: justify;
+}
+
+.card .front .content .main-descricao {
+    min-height: 160px;
+}
+.card .front .content .main-descricao {
+    height: 215px;
+}
+.card .back .content .main-descricao {
+  min-height: 160px;
+  height: 215px;
+  /*overflow: hidden;*/
+  text-overflow: ellipsis;
+  /*white-space: nowrap;*/
+  overflow: hidden;
+}
